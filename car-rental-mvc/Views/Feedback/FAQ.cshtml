@@ -1,0 +1,63 @@
+﻿@model car_rental_mvc.Models.Feedback
+
+@{
+    ViewData["Title"] = "FAQ";
+}
+
+<h1>FAQ</h1>
+<style>
+    h3 {color:darkblue;}
+</style>
+
+<div>
+    <h4>Feedback</h4>
+    <hr />
+    @*<dl class="row">
+        <dt class="col-sm-2">*@
+    @*@Html.DisplayNameFor(model => model.Id)*@
+    <h3>
+        Q. How old do I need to be to rent a Car ?<br />
+    </h3>
+    A. You can rent a car if you are 18 years or above.<br />
+    <h3>
+        Q. How can I reserve a car?<br /></h3>
+        A. You can make a reservation through our website.<br />
+        <h3>
+        Q. Do I need to pick up the car from office?<br /></h3>
+        A. All the cars are delivered and collected free of cost to the address specified at the time of making a booking. Note; cars will not be delivered to any public places like malls, metro station, etc.<br />
+        <h3>
+        Q. I need to drop off the car at a different location, can I do that?<br /></h3>
+        A. No. The car will be collected by our driver from the place to where it was delivered.<br />
+         <h3>
+        Q. How can I pay for my rental?<br /></h3>
+        A. You can pay for your rental using credit card/debit card/net banking/mobile wallets.<br />
+         <h3>
+
+        Q. What all is included in the fare?<br /> </h3>
+        A. The rental fare is inclusive of rent for the hired period, pick and delivery charges and all the applicable government taxes.<br />
+         <h3>
+        Q. Is there any security deposit?<br /></h3>
+        A. Yes. There is a refundable security deposit of Rs. 5000.<br />
+
+        @*</dt>*@
+        @*<dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.Id)
+            </dd>
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.UsersId)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.UsersId)
+            </dd>
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.Feedback1)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.Feedback1)
+            </dd>*@
+        @*</dl>*@
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>
